@@ -1,0 +1,16 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        
+    </head>
+    <body>
+      <a id="target" hreff="tel://00">Click me</a>
+          <script>
+              var target = document.getElementById("target");
+              var fakeEvent= document.createEvent("MouseEvents");
+              fakeEvent.intitEvent("click", true, false);
+              target.dispatchEvent(fakeEvent);
+              
+          </script>
+    </body>
+</html>
